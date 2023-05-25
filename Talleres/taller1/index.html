@@ -6,13 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <script src="/main.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
+
+    <div class="video">
+        <video autoplay muted src="rojo-91074.mp4"></video>
+    </div>
+
+    <h1>Clase Persona</h1>
     <section class="persona">
         <form class="form" id="formPersona">
-            <input type="text" name="nombre">
-            <input type="number" name="edad">
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="number" name="edad" placeholder="Edad" required>
             <select name="sexo">
                 <option value="M">Masculino</option>
                 <option value="F">Femenino</option>
@@ -21,11 +28,11 @@
         </form>
         <span id="saludoHtml">Saludo</span>
     </section>
-    <br><br>
+    <h1>Clase Estudiante</h1>
     <section class="persona">
         <form class="form" id="formEstudiante">
-            <input type="text" name="nombre" placeholder="Nombre">
-            <input type="number" name="edad" placeholder="Edad">
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="number" name="edad" placeholder="Edad" required>
             <select name="sexo">
                 <option value="M">Masculino</option>
                 <option value="F">Femenino</option>
@@ -37,7 +44,7 @@
         <span id="carreraHtml">Carrera</span>
     </section>
     <h2 id="mayorMenor">Es mayor o menor?</h2>
-    <br><br>
+    <h1>Clase Animal</h1>
     <section class="persona">
         <form class="form" id="formAnimal">
             <input type="text" name="nombre" placeholder="Nombre">
@@ -46,6 +53,101 @@
             <input type="submit" value="Saludar">
         </form>
         <span id="sonidoAnimal">Sonido</span><br>
+    </section>
+    <h1>Clase Perro</h1>
+    <section class="persona">
+        <form class="form" id="formPerro">
+            <input type="text" name="nombre" placeholder="Nombre">
+            <input type="number" name="edad" placeholder="Edad">
+            <input type="text" name="sonido" placeholder="Sonido">
+            <input type="text" name="raza" placeholder="Raza">
+            <input type="submit" value="mover cola">
+        </form>
+        <span id="showAccion">Acción del perro</span><br>
+    </section>
+    <h1>Clase Figura</h1>
+    <section class="persona">
+        <form class="form" id="formFigura">
+            <input type="text" name="Color" placeholder="Color">
+            <input type="number" name="area" placeholder="Área">
+            <input type="submit" value="calcularArea">
+        </form>
+        <span id="area">Área</span><br>
+    </section>
+    <h1>Clase Circulo</h1>
+    <section class="persona">
+        <form class="form" id="formCirculo">
+            <input type="text" name="Color" placeholder="Color">
+            <input type="number" name="radio" placeholder="Radio">
+            <input type="submit" value="calcularArea">
+        </form>
+        <span id="areaCirculo">Circulo</span><br>
+    </section>
+    <h1>Clase Rectangulo</h1>
+    <section class="persona">
+        <form class="form" id="formRectangulo">
+            <input type="text" name="color" placeholder="Color">
+            <input type="number" name="largo" placeholder="Largo">
+            <input type="number" name="ancho" placeholder="Ancho">
+            <input type="submit" value="calcularArea">
+        </form>
+        <span id="areaRectangulo">Área</span>
+    </section>
+    <h1>Clase Vehículo</h1>
+    <section class="persona">
+        <form class="form" id="formVehiculo">
+            <input type="text" name="marca" placeholder="marca">
+            <input type="text" name="modelo" placeholder="modelo">
+            <input type="number" name="velocidad" placeholder="velocidad">
+            <input type="submit" value="acelerar">
+        </form>
+        <span id="velocidadActual">velocidadActual</span>
+    </section>
+    <h1>Clase Coche</h1>
+    <section class="persona">
+        <form class="form" id="formCoche">
+            <input type="text" name="marca" placeholder="marca">
+            <input type="text" name="modelo" placeholder="modelo">
+            <input type="number" name="velocidad" placeholder="velocidad">
+            <input type="text" name="combustible" placeholder="Combustible">
+            <input type="submit" value="acelerar">
+        </form>
+        <span id="velocidadCoche">velocidadActual</span>
+    </section>
+    <h1>Metodo static convertirKmHEnMph</h1>
+    <section class="persona">
+        <h2>Km/h a Millas</h2>
+        <form class="form" id="formKilometros">
+            <input type="number" name="velocidad" placeholder="velocidad en km/h">
+            <input type="submit" value="Convertir">
+        </form>
+        <span id="velocidadKm">Km/h -> Millas</span>
+    </section>
+    <h1>Clase Empleado</h1>
+    <section class="persona">
+        <form class="form" id="formEmpleado">
+            <input type="text" name="nombre" placeholder="Nombre">
+            <input type="number" name="edad" placeholder="Edad">
+            <input type="number" name="sueldo" placeholder="Sueldo mensual">
+            <input type="submit" value="Sueldo anual">
+        </form>
+        <span id="salarioAnual">Salario Anual</span>
+    </section>
+    <h1>Clase Gerente</h1>
+    <section class="persona">
+        <form class="form" id="formGerente">
+            <input type="text" name="nombre" placeholder="Nombre">
+            <input type="number" name="edad" placeholder="Edad">
+            <input type="number" name="sueldo" placeholder="Sueldo mensual">
+            <input type="text" name="departamento" placeholder="Departamento">
+            <input type="submit" value="Sueldo anual">
+        </form>
+        <span id="salarioGerente">Salario Anual GERENTE</span>
+    </section>
+    <h1>Generar ID automaticamente</h1>
+    <section class="persona">
+        <button class="btn-style1" id="btnId">Generar ID</button>
+        <span id="showId">Id Empleado</span>
     </section>
 </body>
 </html>
